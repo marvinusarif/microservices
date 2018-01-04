@@ -1,0 +1,105 @@
+syntax = 'proto3';
+
+package UserPackage;
+
+service UserService {
+  rpc ping(Ping) returns (Pong) {}
+  rpc fetchEmployeeById(EmployeeRequestById) returns (Employee) {}
+  rpc fetchEmployeesByCompany(EmployeesRequestByCompany) returns (Employees) {}
+
+  rpc fetchCompanyById(CompanyRequestById) returns (Company) {}
+  rpc fetchCompanyVersion(CompanyRequestById) returns (Version) {}
+
+  rpc fetchSocmedcompanyById(SocmedcompanyRequestById) returns (Socmedcompany) {}
+  rpc fetchSocmedcompanyByCompany(CompanyRequestById) returns (Socmedcompanies) {}
+  rpc fetchSocmedcompanyVersion(SocmedcompanyRequestById) returns (Version) {}
+}
+
+message Ping {
+  required bool ping = 1;
+}
+
+message Pong {
+  required bool pong = 1;
+}
+
+message CompanyRequestById {
+  required string companyId = 1;
+}
+
+message SocmedcompanyRequestById {
+  required string socmedcompanyId = 1;
+}
+
+message Version {
+  required string version = 1;
+}
+
+message Socmedcompany {
+  required string socmedcompanyId = 1;
+  required string companyId = 2;
+  required string socmed = 3;
+  required string value = 4;
+  required string version = 5;
+}
+
+message Socmedcompanies {
+  repeated Socmedcompany socmedcompanies = 1;
+}
+
+message Company {
+  required string companyId = 1;
+  required string industry = 2;
+  required string sector = 3;
+  required string name = 4;
+  required string email = 5;
+  required string bio = 6;
+  required string logo = 7;
+  required string startDate = 8;
+  required string websiteUrl = 9;
+  required string address = 10;
+  required string city = 11;
+  required string state = 12;
+  required string zipcode = 13;
+  required string country = 14;
+  required string statusId = 15;
+  required string version = 16;
+}
+
+message EmployeeRequestById {
+  required string EmployeeId = 1;
+}
+
+message EmployeesRequestByCompany {
+  required string companyId = 1;
+}
+
+message Employees {
+  repeated Employee Employees = 1;
+}
+
+message Employee {
+  required string companyId = 1;
+  required string EmployeeId = 2;
+  required string username = 3;
+  required string email = 4;
+  required string gender = 5;
+  enum Status {
+    SINGLE = 0;
+    MARRIED = 1;
+  }
+  required Status status = 6;
+  optional string address = 7;
+  repeated Phone phones = 8;
+}
+
+message Phone {
+  required string countryCode = 1;
+  required string number = 2;
+  enum PhoneType {
+    HOME = 0;
+    MOBILE = 1;
+    OFFICE = 2;
+  }
+  optional PhoneType phoneType = 3;
+}

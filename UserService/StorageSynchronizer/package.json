@@ -1,0 +1,18 @@
+{
+  "name": "userstoragesynchronizer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "debug": "^3.1.0",
+    "dotenv": "^4.0.0",
+    "ioredis": "^3.2.2",
+    "kafka-custom": "file:///D:\\Github\\EvHivePOC\\Microservices\\CustomMod\\kafka-custom",
+    "lodash": "^4.17.4"
+  }
+}

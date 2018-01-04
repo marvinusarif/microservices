@@ -1,0 +1,19 @@
+{
+  "development" : {
+    "server_conf" : {
+      "host" : "localhost",
+      "port" : 8080
+    },
+    "amqp_conf" : {
+      "host" : "192.168.99.100",
+      "port" : 5672,
+      "username" : "user",
+      "password" : "bitnami",
+      "default_timeout" : 2000
+    },
+    "grpc_conf" : {
+      "host" : "localhost",
+      "port" : 5050
+    }
+  }
+}

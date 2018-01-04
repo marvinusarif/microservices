@@ -1,0 +1,14 @@
+{
+  "development" : {
+    "grpc_conf" : {
+      "host" : "localhost",
+      "port" : 5050
+    },
+    "db_conf" : {
+      "redis" : {
+        "host" : "192.168.99.100",
+        "port" : 6379
+      }
+    }
+  }
+}

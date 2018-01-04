@@ -1,0 +1,21 @@
+{
+  "name": "userwriter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "amqp-custom": "file:///D:\\Github\\EvHivePOC\\Microservices\\CustomMod\\amqp-custom",
+    "debug": "^3.1.0",
+    "dotenv": "^4.0.0",
+    "http-status-codes": "^1.3.0",
+    "kafka-custom": "file:///D:\\Github\\EvHivePOC\\Microservices\\CustomMod\\kafka-custom",
+    "pg": "^6.4.2",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^4.27.0"
+  }
+}
