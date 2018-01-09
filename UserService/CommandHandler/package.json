@@ -16,6 +16,6 @@
     "kafka-custom": "file:///D:\\Github\\EvHivePOC\\Microservices\\CustomMod\\kafka-custom",
     "pg": "^6.4.2",
     "pg-hstore": "^2.3.2",
-    "sequelize": "^4.27.0"
+    "sequelize": "^4.28.7"
   }
 }

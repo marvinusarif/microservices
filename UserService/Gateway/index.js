@@ -48,6 +48,7 @@ const startServer = async ({ server_conf, grpc_conf, amqp_conf }) => {
     });
 
   } catch (e) {
+    console.log(e);
     debug(e)
     process.exit(1);
   }

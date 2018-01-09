@@ -5,10 +5,10 @@
       "port" : 8080
     },
     "amqp_conf" : {
-      "host" : "192.168.99.100",
+      "host" : "localhost",
       "port" : 5672,
-      "username" : "user",
-      "password" : "bitnami",
+      "username" : "guest",
+      "password" : "guest",
       "default_timeout" : 2000
     },
     "grpc_conf" : {
@@ -16,16 +16,16 @@
       "port" : 5050
     },
     "kafka_conf" : {
-      "host" : "192.168.99.100",
+      "host" : "localhost",
       "port" : 2181,
       "partitionerType" : 2
     },
     "db_conf" : {
       "postgres" : {
         "username": "postgres",
-        "password": "bitnami",
-        "dbname": "DBUSERS",
-        "host": "192.168.99.100",
+        "password": "postgres",
+        "dbname": "microservice",
+        "host": "localhost",
         "port": 5432,
         "dialect" : "postgres",
         "pool" : { "max" : 5, "min" : 0, "idle" : 10000 }

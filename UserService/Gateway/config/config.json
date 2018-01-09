@@ -5,10 +5,10 @@
       "port" : 8080
     },
     "amqp_conf" : {
-      "host" : "192.168.99.100",
+      "host" : "localhost",
       "port" : 5672,
-      "username" : "user",
-      "password" : "bitnami",
+      "username" : "guest",
+      "password" : "guest",
       "default_timeout" : 2000
     },
     "grpc_conf" : {
